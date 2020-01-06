@@ -1,5 +1,4 @@
 <h1>Choose a Mall</h1>
 <% Mall.all.each do |mall| %>
-  <h3><%= mall.name %></h3>
-  <br>
+  <%= link_to mall.name, mall_path , class: "button" %>
 <% end %>
