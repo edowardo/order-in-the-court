@@ -1,2 +1,5 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<h1>Choose a Mall</h1>
+<% Mall.all.each do |mall| %>
+  <h3><%= mall.name %></h3>
+  <br>
+<% end %>
