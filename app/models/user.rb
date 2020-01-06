@@ -4,7 +4,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  has_many :restaurants
+  has_many :restaurants, dependent: :destroy
 
   validates :first_name, :last_name, :phone, :email, :date_of_birth, presence: true
   validates :email, :phone, uniqueness: true

@@ -11,3 +11,9 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+body {
+  h1 { color: $red; }
+  h2 { color: $red; }
+  h3 { color: $red; }
+}
